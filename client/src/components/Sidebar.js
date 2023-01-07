@@ -15,19 +15,7 @@ const Sidebar = () => {
           </span>
         </div>
   );
-  const ThemeIcon = () => {
-    const [darkTheme, setDarkTheme] = useDarkMode();
-    const handleMode = () => setDarkTheme(!darkTheme);
-    return (
-      <span onClick={handleMode}>
-        {darkTheme ? (
-          <FaSun size="28" className="top-navigation-icon" />
-        ) : (
-          <FaMoon size="28" className="top-navigation-icon" />
-        )}
-      </span>
-    );
-  };
+ 
   return (
     <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-black shadow-lg  dark:bg-gray-900 ">
       <Link to="/">

@@ -2,9 +2,10 @@ import React from 'react'
 import { ethers } from "ethers";
 import { useState,useEffect } from "react";
 import { Link } from 'react-router-dom';
-import Sidebar from "./Sidebar";
+
 
 import './ShowAuction.css'
+import Sidebar from './Sidebar';
 
 const ShowAuction = ({state,id}) => {
      const {contract}= state;
@@ -115,7 +116,7 @@ const ShowAuction = ({state,id}) => {
 
   return (
     <div>
-          <Sidebar />
+          <Sidebar/>
       <button>
         <Link to="/auctions">Auctions</Link>
       </button>

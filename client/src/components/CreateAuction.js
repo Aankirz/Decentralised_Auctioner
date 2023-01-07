@@ -67,8 +67,7 @@ const CreateAuction = ({ state, account }) => {
 
   return (
     <>
-      <Sidebar />
-
+<Sidebar/>
       <div
         className="min-h-screen py-40"
         style={{

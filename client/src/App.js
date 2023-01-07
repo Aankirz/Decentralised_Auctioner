@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Auctions from './components/Auctions';
 import CreateAuction from './components/CreateAuction';
 import ShowAuction from './components/ShowAuction';
+// import Sidebar from './components/Sidebar';
 const {ethers} = require('ethers');
 
 function App() {
@@ -69,7 +70,6 @@ function App() {
     <div className="App">
       <Navbar state={state} account={account}/>
       <div className='blur' style={{backgroud:"blue"}}></div>
-      
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<CreateAuction state={state} />} />
